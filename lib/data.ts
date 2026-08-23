@@ -98,11 +98,16 @@ export const experiences = [
 ];
 
 export const skills = [
+  { category: 'AI & Responsible AI', items: ['Generative AI (GenAI)', 'Large Language Models (LLMs)', 'Responsible AI (RAI) Frameworks', 'AI Policy Analysis'] },
   { category: 'Programming Languages', items: ['TypeScript', 'Java', 'Python', 'C', 'C++'] },
-  { category: 'Frameworks & Libraries', items: ['Next.js', 'React.js', 'Prisma', 'Flutter', 'Tailwind CSS'] },
-  { category: 'Database', items: ['Firebase', 'MongoDB'] },
+  { category: 'Web Development', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Tailwind CSS'] },
+  { category: 'Mobile Development', items: ['Flutter'] },
+  { category: 'Backend Development', items: ['Node.js', 'Express.js', 'FastAPI'] },
+  { category: 'Database & Data Management', items: ['MongoDB', 'MySQL', 'Prisma'] },
+  { category: 'Version Control & Collaboration', items: ['GitHub', 'GitLab'] },
   { category: 'UI/UX Design Tools', items: ['Figma', 'Adobe XD', 'Canva'] },
-  { category: 'Tools', items: ['GitHub', 'Postman', 'Jira', 'Asana'] },
+  { category: 'Project Management & Productivity Tools', items: ['Jira', 'Asana', 'Trello'] },
+
 ];
 
 export const education = [
