@@ -16,7 +16,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-source-serif);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-display);
 }
 
 body {

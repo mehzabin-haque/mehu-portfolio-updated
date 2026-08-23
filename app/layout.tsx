@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Source_Serif_4, Playfair_Display } from "next/font/google";
+import { Geist_Mono, Source_Serif_4, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import SwipeNavigator from "@/components/SwipeNavigator";
@@ -15,10 +15,10 @@ const sourceSerif = Source_Serif_4({
   weight: ["400", "500", "600"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-display",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -34,8 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} ${sourceSerif.variable} ${playfair.variable} antialiased bg-[#F7F5F0] text-[#1E2430] font-serif`}
-      >
+        className={`${geistMono.variable} ${sourceSerif.variable} ${libreBaskerville.variable} antialiased bg-[#F7F5F0] text-[#1E2430] font-sans`} >
         <SwipeNavigator />
         <div className="md:flex">
           <Sidebar />
