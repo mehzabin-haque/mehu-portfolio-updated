@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Mehzabin Haque',
-  title: 'M.S. Student in Software Engineering',
-  subtitle: 'HCI & Accessibility Researcher',
+  title: 'HCI & Accessibility Researcher',
+  subtitle: 'Human–AI Interaction | Software Engineering',
   affiliation: 'Institute of Information Technology, University of Dhaka',
   email: 'bsse1233@iit.du.ac.bd',
   phone: '+880 1894636853',
@@ -10,9 +10,18 @@ export const profile = {
   github: 'https://github.com/mehzabin-haque',
   scholar: 'https://scholar.google.com/citations?user=Mb549x0AAAAJ&hl=en',
   cv:"https://drive.google.com/file/d/1NDnkNgIj5e8fi1dVnOavwgMZPgYAccRT/view?usp=drive_link",
-  about:
-    "I'm an M.S. student in Software Engineering at the Institute of Information Technology, University of Dhaka, researching Human-Computer Interaction, accessibility, and Responsible AI. I currently work with the University of Louisiana at Lafayette on inclusive, human-centered technologies, and previously contributed to Microsoft-funded research on Bangladesh's AI readiness at the University of Toronto. I'm a co-author on papers at ACM CHI and ACM COMPASS.",
+ about:
+  "I'm a researcher working at the intersection of Human–Computer Interaction (HCI), accessibility, Human–AI Interaction, and Responsible AI. I am currently pursuing an M.S. in Software Engineering at the Institute of Information Technology, University of Dhaka, and conducting HCI and accessibility research with Dr. Tamanna Motahar at the University of Louisiana at Lafayette. Previously, I worked on Microsoft-funded research at the University of Toronto, studying Bangladesh's AI readiness, national AI policies, and responsible AI adoption. My research contributions include publications at ACM CHI 2026, ACM COMPASS 2026, and IEEE ICSME 2024. My broader interests include empirical software engineering and software security."
 };
+
+export const researchInterests = [
+  'Human–Computer Interaction (HCI)',
+  'Human–AI Interaction',
+  'Accessibility',
+  'Responsible and Trustworthy AI',
+  'Empirical Software Engineering',
+  'Software Security',
+];
 
 export const quickLinks = [
   { label: 'Email', href: `mailto:${profile.email}` },
@@ -67,7 +76,7 @@ export const experiences = [
   {
     position: 'Research Assistant, Microsoft-Funded Research',
     organization: 'University of Toronto (Remote) — Supervisor: Dr. Syed Ishtiaque Ahmed',
-    duration: 'Jul 2024 – Jun 2026',
+    duration: 'Jul 2024 – Dec 2025',
     description: [
       "Investigated Bangladesh's AI readiness through analysis of national AI policy, Responsible AI frameworks, and stakeholder perspectives.",
       'Contributed to REAPS, an automated platform for semantic analysis and benchmarking of national AI policies.',
