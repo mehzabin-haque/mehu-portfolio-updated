@@ -9,7 +9,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/mehzabin-haque/',
   github: 'https://github.com/mehzabin-haque',
   scholar: 'https://scholar.google.com/citations?user=Mb549x0AAAAJ&hl=en',
-  cv: '/Mehzabin_Haque_CV.pdf',
+  cv: 'https://drive.google.com/file/d/1NDnkNgIj5e8fi1dVnOavwgMZPgYAccRT/view?usp=drive_link',
   about:
     "I'm a researcher working at the intersection of Human–Computer Interaction, accessibility, Human–AI Interaction, and Responsible AI. I am pursuing an M.S. in Software Engineering at the Institute of Information Technology, University of Dhaka. I conduct HCI and accessibility research with Dr. Tamanna Motahar at the University of Louisiana at Lafayette, and previously contributed to Microsoft-funded research at the University of Toronto on Bangladesh’s AI readiness. My work spans empirical human–AI studies, software security, formal methods, and software architecture. I have co-authored publications at ACM CHI 2026, ACM COMPASS 2026, and IEEE ICSME 2024.",
 };
