@@ -42,8 +42,8 @@ export default function RootLayout({
             <div className="flex-1">{children}</div>
             <footer className="border-t border-double border-t-4 border-[#D9D4C7] py-6">
               <div className="mx-auto max-w-2xl px-8 flex items-center justify-between text-[11px] tracking-wide text-[#8A8578] font-mono">
-                <span>Curriculum Vitae — Mehzabin Haque</span>
-                <span>Updated August 2026</span>
+                <span>Academic Portfolio — Mehzabin Haque</span>
+                <span>Updated November 2026</span>
               </div>
             </footer>
           </div>
