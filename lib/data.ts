@@ -155,18 +155,6 @@ export const education = [
     duration: '2020 – 2025',
     details: 'CGPA: 3.84/4.00',
   },
-  {
-    degree: 'Higher Secondary Certificate (HSC)',
-    institution: 'Dhaka City College',
-    duration: '2019',
-    details: 'GPA: 5.00/5.00',
-  },
-  {
-    degree: 'Secondary School Certificate (SSC)',
-    institution: 'Udayan Uchcha Madhyamik Bidyalaya',
-    duration: '2017',
-    details: 'GPA: 5.00/5.00',
-  },
 ];
 
 export const awards = [
