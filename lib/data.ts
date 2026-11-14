@@ -106,6 +106,33 @@ export const experiences = [
   },
 ];
 
+
+export const ongoingProjects = [
+  {
+    title: 'When the LLM Disagrees',
+    subtitle: 'Human–AI Collaborative Secure Code Review',
+    period: '2026–Present',
+    description:
+      'Investigating how correct and incorrect LLM advice affects developers’ vulnerability judgments, confidence, and reliance through a controlled pre/post study involving 40 Bangladeshi programmers.',
+    category: 'Research',
+  },
+  {
+    title: 'RasterOP: Z-to-Alloy Specification Conversion',
+    period: '2026–Present',
+    description:
+      'Exploring the translation of formal specifications from Z notation into Alloy to support representation and verification.',
+    category: 'Academic Project',
+  },
+  {
+    title: 'University Research Management System (URMS)',
+    period: '2026–Present',
+    description:
+      'Applying service-oriented analysis and SOA design principles to academic research and collaboration workflows.',
+    category: 'Academic Project',
+  },
+];
+
+
 export const skills = [
   { category: 'AI & Responsible AI', items: ['Generative AI (GenAI)', 'Large Language Models (LLMs)', 'Responsible AI (RAI) Frameworks', 'AI Policy Analysis'] },
   { category: 'Programming Languages', items: ['TypeScript', 'Java', 'Python', 'C', 'C++'] },
