@@ -1,5 +1,5 @@
 import { PageShell, Reveal, SectionHeading } from '@/components/PageBits';
-import { education, awards } from '@/lib/data';
+import { education, awards, communityService } from '@/lib/data';
 
 export default function EducationPage() {
   return (
@@ -30,6 +30,18 @@ export default function EducationPage() {
             </Reveal>
           ))}
         </div>
+      </div>
+      <div className="mt-16">
+        <SectionHeading title="Community Service" />
+        {communityService.map((item) => (
+          <Reveal key={item.organization}>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-serif text-base font-semibold text-[#1E2430]">{item.role} — {item.organization}</h3>
+              <span className="font-mono text-[11px] text-[#8A8578]">{item.period}</span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-[#3C3F45]">{item.description}</p>
+          </Reveal>
+        ))}
       </div>
     </PageShell>
   );
