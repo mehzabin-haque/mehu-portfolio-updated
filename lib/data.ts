@@ -9,19 +9,10 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/mehzabin-haque/',
   github: 'https://github.com/mehzabin-haque',
   scholar: 'https://scholar.google.com/citations?user=Mb549x0AAAAJ&hl=en',
-  cv:"https://drive.google.com/file/d/1NDnkNgIj5e8fi1dVnOavwgMZPgYAccRT/view?usp=drive_link",
- about:
-  "I'm a researcher working at the intersection of Human–Computer Interaction (HCI), accessibility, Human–AI Interaction, and Responsible AI. I am currently pursuing an M.S. in Software Engineering at the Institute of Information Technology, University of Dhaka, and conducting HCI and accessibility research with Dr. Tamanna Motahar at the University of Louisiana at Lafayette. Previously, I worked on Microsoft-funded research at the University of Toronto, studying Bangladesh's AI readiness, national AI policies, and responsible AI adoption. My research contributions include publications at ACM CHI 2026, ACM COMPASS 2026, and IEEE ICSME 2024. My broader interests include empirical software engineering and software security."
+  cv: '/Mehzabin_Haque_CV.pdf',
+  about:
+    "I'm a researcher working at the intersection of Human–Computer Interaction, accessibility, Human–AI Interaction, and Responsible AI. I am pursuing an M.S. in Software Engineering at the Institute of Information Technology, University of Dhaka. I conduct HCI and accessibility research with Dr. Tamanna Motahar at the University of Louisiana at Lafayette, and previously contributed to Microsoft-funded research at the University of Toronto on Bangladesh’s AI readiness. My work spans empirical human–AI studies, software security, formal methods, and software architecture. I have co-authored publications at ACM CHI 2026, ACM COMPASS 2026, and IEEE ICSME 2024.",
 };
-
-export const researchInterests = [
-  'Human–Computer Interaction (HCI)',
-  'Human–AI Interaction',
-  'Accessibility',
-  'Responsible and Trustworthy AI',
-  'Empirical Software Engineering',
-  'Software Security',
-];
 
 export const quickLinks = [
   { label: 'Email', href: `mailto:${profile.email}` },
@@ -40,17 +31,49 @@ export const NAV_ITEMS: { href: string; label: string }[] = [
   // { href: '/contact', label: 'Contact' },
 ];
 
+export const researchInterests = [
+  'Human–Computer Interaction (HCI)',
+  'Human–AI Interaction',
+  'Accessibility',
+  'Responsible and Trustworthy AI',
+  'Empirical Software Engineering',
+  'Software Security',
+];
+
+export const ongoingProjects = [
+  {
+    title: 'When the LLM Disagrees: Human–AI Collaborative Secure Code Review',
+    period: '2026 – Present',
+    category: 'Empirical Research',
+    description: 'Studying how correct and incorrect AI security advice affects programmers’ vulnerability judgments, confidence, and reliance. A controlled pre/post experiment compares independent and post-advice decisions on Python/Flask snippets; the updated dataset comprises 40 participants and 160 paired judgments.',
+    topics: ['Human–AI Interaction', 'Secure Code Review', 'Empirical Methods'],
+  },
+  {
+    title: 'RasterOP: Z-to-Alloy Specification Conversion',
+    period: '2026 – Present',
+    category: 'Academic Project',
+    description: 'Translating RasterOP specifications from Z notation to Alloy and exploring model representation and verification across formal specification languages.',
+    topics: ['Formal Methods', 'Z Notation', 'Alloy'],
+  },
+  {
+    title: 'University Research Management System (URMS)',
+    period: '2026 – Present',
+    category: 'Academic Project',
+    description: 'Designed a university research management platform for researcher profiles, publication records, labs, recruitment, co-author recognition, notifications, and moderation. Modeled stakeholders, requirements, workflows, and business entities, then identified candidate services and applied SOA design principles.',
+    topics: ['Requirements Engineering', 'Software Architecture', 'SOA'],
+  },
+];
+
 export const highlights = [
-  { when: '2026', text: 'Started M.S. in Software Engineering at IIT, University of Dhaka.' },
-  { when: '2026', text: 'Co-authored two papers accepted at ACM CHI EA and ACM COMPASS.' },
-  { when: '2026', text: 'Completed Microsoft-funded research on Bangladesh’s AI readiness at the University of Toronto.' },
-  { when: '2025', text: 'Started as a Lecturer in Software Engineering at Daffodil International University.' },
-  { when: '2025', text: 'Completed my BSSE degree.' },
-  { when: '2024', text: 'Co-authored a paper accepted at IEEE ICSME 2024.' },
-  { when: '2024', text: 'Completed a2i internship, contributing to accessibility and usability improvements in public-facing digital services.' },
-  { when: '2023', text: 'Completed UIUC+ Summer Research Internship, conducting research on testing code translation via language interoperability.' },
-  { when: '2023', text: 'Won ITVerse 2.0 Hackathon (Blockchain Category) and ITVerse UI/UX Explorer Contest.' },
-  { when: '2023', text: 'Finalist in Blockchain Olympiad Bangladesh (BCOLBD) and 1st Runner-Up in TechTales Contest.' },
+  { when: '2026', text: 'Conducting HCI and accessibility research with Dr. Tamanna Motahar at the University of Louisiana at Lafayette.' },
+  { when: '2026', text: 'Conducted a controlled human–AI secure code review study; the updated dataset includes 40 participants and 160 paired judgments.' },
+  { when: '2026', text: 'Worked on Z-to-Alloy formal specification conversion and service-oriented design of a university research management system.' },
+  { when: '2026', text: 'Began M.S. in Software Engineering at IIT, University of Dhaka.' },
+  { when: '2026', text: 'Co-authored research published at ACM CHI EA and ACM COMPASS on Bangladesh’s AI readiness.' },
+  { when: '2025', text: 'Completed Microsoft-funded research at the University of Toronto on AI policy and Responsible AI readiness.' },
+  { when: '2025', text: 'Lecturer in Software Engineering at Daffodil International University (May–August); completed BSSE at University of Dhaka.' },
+  { when: '2024', text: 'Co-authored GlueTest at IEEE ICSME; completed software engineering internship at a2i.' },
+  { when: '2023', text: 'Conducted UIUC+ summer research and received awards at ITVerse, TechTales, and Blockchain Olympiad Bangladesh.' },
 ];
 
 export const experiences = [
@@ -64,16 +87,6 @@ export const experiences = [
     ],
   },
   {
-    position: 'Lecturer, Software Engineering',
-    organization: 'Daffodil International University',
-    duration: 'May 2025 – Aug 2025',
-    description: [
-      'Designed and delivered laboratory exercises using practical datasets and real-world computing applications for Computer Fundamentals, Machine Learning Driven Data Analysis II, and Statistical Analysis Lab.',
-      'Mentored undergraduate students in coursework, research activities, and final-year projects.',
-      'Incorporated applied computing, data analysis, and responsible technology concepts into classroom and laboratory instruction.',
-    ],
-  },
-  {
     position: 'Research Assistant, Microsoft-Funded Research',
     organization: 'University of Toronto (Remote) — Supervisor: Dr. Syed Ishtiaque Ahmed',
     duration: 'Jul 2024 – Dec 2025',
@@ -83,6 +96,16 @@ export const experiences = [
       'Contributed to the AI Maturity Assessment Tool (AIMAT) for evaluating Responsible AI readiness in Bangladeshi software organizations.',
       'Conducted expert interviews and contributed to policy similarity analysis, qualitative synthesis, and interactive visualization of research findings.',
       'Co-authored research published at ACM CHI 2026 and ACM COMPASS 2026.',
+    ],
+  },
+  {
+    position: 'Lecturer, Software Engineering',
+    organization: 'Daffodil International University',
+    duration: 'May 2025 – Aug 2025',
+    description: [
+      'Designed and delivered laboratory exercises using practical datasets and real-world computing applications for Computer Fundamentals, Machine Learning Driven Data Analysis II, and Statistical Analysis Lab.',
+      'Mentored undergraduate students in coursework, research activities, and final-year projects.',
+      'Incorporated applied computing, data analysis, and responsible technology concepts into classroom and laboratory instruction.',
     ],
   },
   {
@@ -105,33 +128,6 @@ export const experiences = [
     ],
   },
 ];
-
-
-export const ongoingProjects = [
-  {
-    title: 'When the LLM Disagrees',
-    subtitle: 'Human–AI Collaborative Secure Code Review',
-    period: '2026–Present',
-    description:
-      'Investigating how correct and incorrect LLM advice affects developers’ vulnerability judgments, confidence, and reliance through a controlled pre/post study involving 40 Bangladeshi programmers.',
-    category: 'Research',
-  },
-  {
-    title: 'RasterOP: Z-to-Alloy Specification Conversion',
-    period: '2026–Present',
-    description:
-      'Exploring the translation of formal specifications from Z notation into Alloy to support representation and verification.',
-    category: 'Academic Project',
-  },
-  {
-    title: 'University Research Management System (URMS)',
-    period: '2026–Present',
-    description:
-      'Applying service-oriented analysis and SOA design principles to academic research and collaboration workflows.',
-    category: 'Academic Project',
-  },
-];
-
 
 export const skills = [
   { category: 'AI & Responsible AI', items: ['Generative AI (GenAI)', 'Large Language Models (LLMs)', 'Responsible AI (RAI) Frameworks', 'AI Policy Analysis'] },
@@ -178,44 +174,60 @@ export const awards = [
   { title: 'Champion, ITVerse UI/UX Explorer Contest', date: '2023' },
   { title: '1st Runner-Up, TechTales Contest', date: '2023' },
   { title: 'Finalist, Blockchain Olympiad Bangladesh (BCOLBD)', date: '2023' },
+  { title: 'High School Academic Excellence Award', date: '2018' },
+];
+
+export const communityService = [
+  {
+    role: 'Mentor',
+    organization: 'CDSE – Monash University',
+    period: '2020',
+    description: 'Provided virtual academic support to primary-school students in rural Bangladesh during the COVID-19 pandemic.',
+  },
 ];
 
 export const projects = [
+  ...ongoingProjects.map((project) => ({
+    title: project.title,
+    year: project.period,
+    description: project.description,
+    technologies: project.topics,
+    category: project.category,
+  })),
+  {
+    title: 'REAPS – AI Policy Analysis Tool',
+    year: '2024',
+    description: 'Research platform for semantic analysis and benchmarking of national AI policies, including policy-gap identification and comparative Responsible AI assessment.',
+    technologies: ['Next.js', 'Python'],
+    category: 'Research Tool',
+  },
+  {
+    title: 'Proof of Democracy (EtherCast)',
+    year: '2023',
+    description: 'Corporate e-voting platform using blockchain and zero-knowledge proof techniques.',
+    technologies: ['Next.js', 'Solidity', 'MongoDB', 'Prisma'],
+    category: 'Software Project',
+  },
   {
     title: 'DigiBox Cloud',
     year: '2024',
     description: 'Smart locker system for secure package pick-up with SMS/email alerts.',
     technologies: ['React', 'Laravel'],
-    category: 'Professional',
-  },
-  {
-    title: 'REAPS – AI Policy Analysis Tool',
-    year: '2024',
-    description:
-      'Research platform for semantic analysis and benchmarking of national AI policies, supporting policy-gap identification and comparative Responsible AI assessment.',
-    technologies: ['Next.js', 'Python'],
-    category: 'Research',
+    category: 'Software Project',
   },
   {
     title: 'ekPass',
     year: '2024',
-    description: 'Smart toll collection system enabling automated vehicle processing and frictionless digital toll payment.',
+    description: 'Smart toll collection system enabling automated vehicle processing and digital toll payment.',
     technologies: ['FastAPI', 'React Native', 'Laravel'],
-    category: 'Academic',
-  },
-  {
-    title: 'Proof of Democracy (EtherCast)',
-    year: '2023',
-    description: 'Secure corporate e-voting platform incorporating blockchain technology and zero-knowledge proof techniques.',
-    technologies: ['Next.js', 'Solidity', 'MongoDB', 'Prisma'],
-    category: 'Academic',
+    category: 'Software Project',
   },
   {
     title: 'BUS Koi',
     year: '2023',
     description: 'Real-time bus tracking mobile application for University of Dhaka students.',
     technologies: ['Flutter', 'Firebase'],
-    category: 'Academic',
+    category: 'Software Project',
   },
 ];
 
@@ -254,5 +266,5 @@ export const publicationsByYear: { year: string; items: { title: string; authors
 export const references = [
   { name: 'Dr. B. M. Mainul Hossain', role: 'Professor, IIT, University of Dhaka', email: 'mainul@iit.du.ac.bd' },
   { name: 'Dr. Naushin Nower', role: 'Professor, IIT, University of Dhaka', email: 'naushin@iit.du.ac.bd' },
-  { name: 'Dr. Ahmedul Kabir', role: 'Associate Professor, IIT, University of Dhaka', email: 'kabir@iit.du.ac.bd' },
+  { name: 'Dr. Syed Ishtiaque Ahmed', role: 'Associate Professor, University of Toronto', email: 'ishtiaque@cs.toronto.edu' },
 ];
