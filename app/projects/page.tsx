@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <PageShell>
       <SectionHeading title="Projects" />
-      <p className="mb-12 text-sm leading-relaxed text-[#565A63]">Selected research studies, coursework-based design projects, research tools, and software systems.</p>
+      <p className="mb-12 text-sm leading-relaxed text-[#565A63]"></p>
       {sections.map((section, idx) => (
         <section key={section.title} className={idx ? 'mt-16' : ''}>
           <h3 className="mb-6 font-mono text-[11px] uppercase tracking-widest text-[#8A8578]">{section.title}</h3>
